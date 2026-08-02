@@ -1,0 +1,21 @@
+#basic chatbot
+print("welcome to the chatbot sir/ma'am,how can i help you?")
+
+chatbot_responses = ["hello", "hi", "hey", "how are you", "what is your name", "bye"]
+
+while True:
+    user = input("you:")
+    if user in chatbot_responses:
+        if user in ("hi", "hello", "hey"):
+            print("chatbot: hi sir/ma'am, how can i help you?")
+        elif user == "how are you":
+            print("chatbot: i am fine sir/ma'am, thank you for asking")
+        elif user == "what is your name":
+            print("chatbot: my name is chatbot sir/ma'am")
+        elif user == "i want to know about you":
+            print("chatbot: i am a simple chatbot designed to assist you with basic queries")
+        elif user == "bye":
+            print("chatbot: bye sir/ma'am, have a nice day!")
+            break
+    else:
+        print("chatbot: sorry sir/ma'am, i didn't understand what you said. Please try again")
